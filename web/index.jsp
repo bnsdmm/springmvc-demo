@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>$Title$</title>
@@ -68,7 +69,7 @@
     <br>
     email:<input type="text" name="email">
     <br>
-   <%-- age:<input type="text" name="age">--%>
+    <%-- age:<input type="text" name="age">--%>
     <br>
     city:<input type="text" name="address.city">
     <br>
@@ -83,5 +84,17 @@
 <a href="mvc/testMap">hello testMap</a>
 <br>
 <br><br>
+<a href="mvc/testViewAndViewResolver">hello testViewAndViewResolver</a>
+<br>
+<br><br>
+<a href="mvc/testViewAndViewResolver">hello testViewAndViewResolver</a>
+<br>
+<br><br>
+<a href="mvc/testView">hello testView</a>
+<br>
+<a href="mvc/testRedirect">hello testRedirect</a>
+<br>
+<a href="emps">hello testRedirect</a>
+<br>
 </body>
 </html>

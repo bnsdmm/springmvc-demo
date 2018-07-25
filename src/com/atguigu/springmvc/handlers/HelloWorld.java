@@ -19,9 +19,27 @@ import java.util.Map;
 public class HelloWorld {
     private static final String SUCCESS = "success";
 
+    @RequestMapping("/testRedirect")
+    public String testRedirect() {
+        return "redirect:/index.jsp";
+    }
+
+    @RequestMapping("/testView")
+    public String testView() {
+        System.out.println("testView");
+        return "helloView";
+    }
+
+    @RequestMapping("/testViewAndViewResolver")
+    public String testViewAndViewResolver() {
+        System.out.println("testViewAndViewResolver");
+        return SUCCESS;
+    }
+
+
     @RequestMapping("/testMap")
-    public String testMap(Map<String,Object> map) {
-        map.put("names",Arrays.asList("tom","jerry","mike"));
+    public String testMap(Map<String, Object> map) {
+        map.put("names", Arrays.asList("tom", "jerry", "mike"));
         System.out.println(map.getClass().getName());
         return SUCCESS;
     }
